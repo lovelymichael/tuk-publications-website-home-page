@@ -22,7 +22,7 @@ const HeroSlider = () => {
     englishGrammar,
     hindiVyakaran,
   ];
-console.log(banners);
+
   return (
     <section className="w-full bg-no-repeat bg-cover bg-center py-8"
   style={{

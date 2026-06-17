@@ -26,7 +26,7 @@ const BookSlider = () => {
 
         <Swiper
           slidesPerView={4}
-          spaceBetween={30}
+          spaceBetween={80}
           loop={true}
           navigation={{
             prevEl: ".custom-prev",
@@ -59,22 +59,20 @@ const BookSlider = () => {
                 <div
                   className="
                     bg-white
-                    rounded-xl
+                    rounded-2xl
                     shadow-lg
-                    overflow-hidden
-                    transition-all
-                    duration-300
-                    hover:-translate-y-2
                     hover:shadow-2xl
                     cursor-pointer
+                    
+                    
                   "
                   style={{
-                    borderTop: `20px solid ${card.color}`,
+                    borderTop: `30px solid ${card.color}`,
                   }}
                 >
-                  <div className="h-[250px] flex items-center justify-center px-6">
+                  <div className="h-[200px] flex items-center justify-center px-6 ">
                     <h2
-                      className="text-3xl font-bold text-center"
+                      className="text-xl font-bold text-center"
                       style={{ color: card.color }}
                     >
                       {card.title}
@@ -99,7 +97,7 @@ const BookSlider = () => {
                       );
                       setActiveDropdown(null);
                     }}
-                    className="w-full text-white font-bold py-3 text-xl"
+                    className="w-full text-white font-bold py-3 text-xl rounded-bl-3xl rounded-br-3xl"
                     style={{
                       backgroundColor: card.color,
                     }}

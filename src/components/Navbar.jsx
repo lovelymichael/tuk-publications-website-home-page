@@ -1,14 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react"
 import { ChevronDown, ChevronRight } from "lucide-react";
 import tukLogo from "../assets/images/tuk_logo.png";
 import medalistLogo from "../assets/images/medalist-publication-logo.png";
 
 const Navbar = () => {
+  const[showTukMenu, setShowTukMenu]=useState(false);
+  const [showMedalistMenu, setShowMedalistMenu] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showTeacherModal, setShowTeacherModal] = useState(false);
   const [showBuyBookModal, setShowBuyBookModal] = useState(false);
+
+  const menuRef =useRef(null);
+
+  useEffect(()=>{
+    const handleClickOutside = (event) =>{
+      if(menuRef.current && !menuRef.current.contains(event.target)){
+        setShowTukMenu(false);
+        setShowMedalistMenu(false);
+      }
+    };
+
+   document.addEventListener("mousedown", handleClickOutside);
+    return ()=>{
+      document.removeEventListener("mouseDown", handleClickOutside);
+    };
+  }, [])
   return (
-    <div>
+    <div ref={menuRef}>
       <nav className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
@@ -16,12 +34,18 @@ const Navbar = () => {
             <div className="flex items-center gap-8">
               {/* TUK DROPDOWN */}
               <div className="relative group">
-                <button className="flex items-center gap-2">
+                <button
+                onClick={()=>{
+                  setShowTukMenu(!showTukMenu);
+                  setShowMedalistMenu(false);
+                }}
+                 className="flex items-center gap-2">
                   <img src={tukLogo} alt="TUK" className="h-12" />
                   <ChevronDown size={18} />
                 </button>
 
-                <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-xl rounded-lg w-80 z-50">
+                {showTukMenu && (
+                <div className="absolute left-0 top-full bg-white shadow-xl rounded-lg w-80 z-50">
                   {/* Kindergarten Series */}
                   <div className="relative group/kg">
                     <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
@@ -175,16 +199,22 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
+                )}
               </div>
 
               {/* MEDALIST */}
               <div className="relative group">
-                <button className="flex items-center gap-2">
+                <button onClick={()=>{
+                  setShowMedalistMenu(!showMedalistMenu);
+                  setShowTukMenu(false);
+                }}
+                 className="flex items-center gap-2">
                   <img src={medalistLogo} alt="Medalist" className="h-12" />
                   <ChevronDown size={18} />
                 </button>
 
-                <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-xl rounded-lg w-80 z-50">
+                {showMedalistMenu && (
+                <div className="absolute left-0 top-full bg-white shadow-xl rounded-lg w-80 z-50">
                   <a
                     href="#"
                     className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
@@ -289,6 +319,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
+                )}
               </div>
             </div>
 
@@ -328,7 +359,9 @@ const Navbar = () => {
             >
               ×
             </button>
-
+            <h2 className="text-2xl font-bold text-center text-[#333] mb-6">
+  Student Login
+</h2>
             <div className="space-y-6">
               <div>
                 <label className="block text-lg font-semibold mb-2">
@@ -374,7 +407,9 @@ const Navbar = () => {
             ×
           </button>
 
-          
+          <h2 className="text-2xl font-bold text-center text-[#333] mb-6">
+ Teachers Resource
+</h2>
 
           <div>
             <label className="block text-lg font-medium mb-2">
