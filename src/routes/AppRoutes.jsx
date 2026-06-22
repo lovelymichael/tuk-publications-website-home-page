@@ -92,7 +92,7 @@ function AppRoutes() {
 
       <Route path="/contact-us" element={<ContactUs />} />
 
-      <Route path="/terms-consditions" element={<TermsConditions />} />
+      <Route path="/terms-conditions" element={<TermsConditions />} />
 
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 

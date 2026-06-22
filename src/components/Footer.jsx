@@ -23,7 +23,7 @@ const Footer = () =>{
                             </li>
 
                             <li className="hover:text-white cursor-pointer">
-                                <Link to="/terms-consditions">Term & Conditions</Link>
+                                <Link to="/terms-conditions">Term & Conditions</Link>
                             </li>
 
                             <li className="hover:text-white cursor-pointer">
