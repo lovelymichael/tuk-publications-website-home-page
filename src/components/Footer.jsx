@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedinIn, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Footer = () =>{
@@ -13,10 +14,21 @@ const Footer = () =>{
                         </h3>
                         <div className="w-8 h-[2px] bg-sky-500 mb-6"></div>
                         <ul className="space-y-4 text-gray-300">
-                            <li className="hover:text-white cursor-pointer">About Us</li>
-                            <li className="hover:text-white cursor-pointer">Contact Us</li>
-                            <li className="hover:text-white cursor-pointer">Term & Conditions</li>
-                            <li className="hover:text-white cursor-pointer">Privacy Policy</li>
+                            <li className="hover:text-white cursor-pointer">
+                                <Link to="/about-us"> About Us </Link>
+                            </li>
+
+                            <li className="hover:text-white cursor-pointer">
+                                <Link to="/contact-us">Contact Us</Link>
+                            </li>
+
+                            <li className="hover:text-white cursor-pointer">
+                                <Link to="/terms-consditions">Term & Conditions</Link>
+                            </li>
+
+                            <li className="hover:text-white cursor-pointer">
+                                <Link to="/privacy-policy">Privacy Policy</Link>
+                            </li>
                         </ul>
                     </div>
                     {/*Get in Touch */}
@@ -27,28 +39,43 @@ const Footer = () =>{
 
                         <div className="grid grid-cols-2 gap-y-5">
                             <div className="flex items-center gap-3">
+                                <a href="https://www.facebook.com/theultimateknowledge1" 
+                                className="flex items-center gap-3">
                                 <FaFacebook className="text-xl"/>
                                 <span>Facebook</span>
+                                </a>
                             </div>
 
                             <div className="flex items-center gap-3">
+                                <a href="https://www.linkedin.com/company/theultimateknowledge"
+                                className="flex items-center gap-3">
                                 <FaLinkedinIn className="text-xl"/>
                                 <span>LinkedIn</span>
+                                </a>
                             </div>
 
                             <div className="flex items-center gap-3">
+                                <a href="https://x.com/TUKnowledge" 
+                                className="flex items-center gap-3">
                                 <FaTwitter className="text-xl"/>
                                 <span>Twitter</span>
+                                </a>
                             </div>
 
                             <div className="flex items-center gap-3">
+                                <a href="https://www.youtube.com/channel/UCbzL3EUWr5FK2eXce_8euWw"
+                                className="flex items-center gap-3">
                                 <FaYoutube className="text-xl"/>
                                 <span>Youtube</span>
+                                </a>
                             </div>
 
                             <div className="flex items-center gap-3">
+                                <a href="https://www.instagram.com/theultimateknowledge1/"
+                                className="flex items-center gap-3">
                                 <FaInstagram className="text-xl"/>
                                 <span>Instagram</span>
+                                </a>
                             </div>
                         </div>
                     </div>

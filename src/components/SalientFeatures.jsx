@@ -78,7 +78,6 @@ const SalientFeatures = () => {
                     >
                       <Icon size={55} className="text-white" />
                     </div>
-
                   </div>
                 </div>
 

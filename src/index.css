@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 @import "tailwindcss";
+
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -30,4 +32,85 @@
 .swiper-button-prev {
   color: #555;
   font-weight: bold;
+}
+
+/**About Page Slider Css Start**/
+.about-slider {
+  position: relative;
+}
+
+
+.about-slider .custom-prev,
+.about-slider .custom-next {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #404040;
+  color: #fff;
+  z-index: 10;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.about-slider .custom-prev {
+  left: -15px;
+}
+
+.about-slider .custom-next {
+  right: -15px;
+}
+
+.about-slider .custom-prev:hover,
+.about-slider .custom-next:hover {
+  background: #000;
+}
+
+/**About Page Slider Css End**/
+
+
+/******Contact Page*********/
+.contactstrip {
+  width: fit-content;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  position: relative;
+  left: -29px;
+  top:15px;
+  background: #0065b5;
+  color: #fff;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.contactstrip::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #000;
+  border-left: 8px solid transparent;
+}
+
+.contactstrip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 15px solid #0065b5;
 }

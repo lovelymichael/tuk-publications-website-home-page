@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react"
 import { ChevronDown, ChevronRight } from "lucide-react";
 import tukLogo from "../assets/images/tuk_logo.png";
 import medalistLogo from "../assets/images/medalist-publication-logo.png";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const[showTukMenu, setShowTukMenu]=useState(false);
@@ -45,157 +47,220 @@ const Navbar = () => {
                 </button>
 
                 {showTukMenu && (
-                <div className="absolute left-0 top-full bg-white shadow-xl rounded-lg w-80 z-50">
+                <div className="absolute left-0 top-full bg-white shadow-xl rounded-lg w-80 z-50 py-2">
                   {/* Kindergarten Series */}
                   <div className="relative group/kg">
-                    <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
+                    <button className="w-full flex justify-between items-center px-4 py-1 hover:bg-blue-500 hover:text-white">
                       Kindergarten Series
                       <ChevronRight size={16} />
                     </button>
 
-                    <div className="absolute left-full top-0 hidden group-hover/kg:block bg-white shadow-xl rounded-lg w-72">
+                    <div className="absolute left-full top-0 hidden group-hover/kg:block bg-white shadow-xl rounded-lg w-72 py-2">
                       <div className="relative group/play">
-                        <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
+                        <button className="w-full flex justify-between items-center px-4 hover:bg-blue-500 hover:text-white">
                           Play and Learn Series
                           <ChevronRight size={16} />
                         </button>
 
-                        <div className="absolute left-full top-0 hidden group-hover/play:block bg-white shadow-xl rounded-lg w-60">
-                          <a
-                            href="#"
-                            className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                        <div className="absolute left-full top-0 hidden group-hover/play:block bg-white shadow-xl rounded-lg w-60 py-2">
+                          <Link to="kindergarten-play-n-learn-books-nursery"
+                            className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                           >
                             Nursery
-                          </a>
+                          </Link>
 
-                          <a
-                            href="#"
-                            className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                          <Link to="kindergarten-play-n-learn-books-lkg"
+                            className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                           >
                             Lower Kindergarten
-                          </a>
+                          </Link>
 
-                          <a
-                            href="#"
-                            className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                          <Link to="kindergarten-play-n-learn-books-ukg"
+                            className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                           >
                             Upper Kindergarten
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
                       <div className="relative group/book">
-                        <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
+                        <button className="w-full flex justify-between items-center px-4 py-1 hover:bg-blue-500 hover:text-white">
                           My Play Book Series
                           <ChevronRight size={16} />
                         </button>
 
-                        <div className="absolute left-full top-0 hidden group-hover/book:block bg-white shadow-xl rounded-lg w-60">
-                          <a
-                            href="#"
-                            className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                        <div className="absolute left-full top-0 hidden group-hover/book:block bg-white shadow-xl rounded-lg w-60 py-2">
+                          <Link to="kindergarten-play-books-series-nursery"
+                            className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                           >
                             Nursery
-                          </a>
+                          </Link>
 
-                          <a
-                            href="#"
-                            className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                          <Link to="kindergarten-play-books-series-lkg"
+                            className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                           >
                             Lower Kindergarten
-                          </a>
+                          </Link>
 
-                          <a
-                            href="#"
-                            className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                          <Link to="kindergarten-play-books-series-ukg"
+                            className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                           >
                             Upper Kindergarten
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="resource-repository"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Resource Repository Kindergarten
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
                   {/* GK Series */}
                   <div className="relative group/gk">
-                    <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
+                    <button className="w-full flex justify-between items-center px-4 py-1 hover:bg-blue-500 hover:text-white">
                       General Knowledge Series
                       <ChevronRight size={16} />
                     </button>
 
-                    <div className="absolute left-full top-0 hidden group-hover/gk:block bg-white shadow-xl rounded-lg w-72">
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                    <div className="absolute left-full top-0 hidden group-hover/gk:block bg-white shadow-xl rounded-lg w-72 py-2">
+                      <Link to="new-wonders-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         New Wonders of GK
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="revised-universal-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Revised Universal GK
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="revised-progressive-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Revised Progressive GK
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="wonders-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Wonders of GK
-                      </a>
+                      </Link>
+
+                      <Link to="advanced-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Advanced GK
+                      </Link>
+
+                      <Link to="universal-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Universal GK
+                      </Link>
+
+                      <Link to="integrated-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                       Integrated GK
+                      </Link>
+
+                      <Link to="gk-redefined"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        GK Redefined
+                      </Link>
+
+                      <Link to="progressive-gk"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Progressive GK
+                      </Link>
+
+                      <Link to="gk-junction"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        GK Junction
+                      </Link>
                     </div>
                   </div>
 
                   {/* Computer Series */}
                   <div className="relative group/computer">
-                    <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
+                    <button className="w-full flex justify-between items-center px-4 py-1 hover:bg-blue-500 hover:text-white">
                       Computer Series
                       <ChevronRight size={16} />
                     </button>
 
-                    <div className="absolute left-full top-0 hidden group-hover/computer:block bg-white shadow-xl rounded-lg w-72">
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                    <div className="absolute left-full top-0 hidden group-hover/computer:block bg-white shadow-xl rounded-lg w-72 py-2">
+                      <Link to="futuristic-computer"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Futuristic Computer
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="artificial-intelligence"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Artificial Intelligence
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="advanced-computer"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Advanced Computer
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="progressive-computer"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Progressive Computer
+                      </Link>
+
+                      <Link to="revised-the-computer-hub"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Revised The Computer Hub
+                      </Link>
+
+                      <Link to="thecomputerhub"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        The Computer Hub
+                      </Link>
+
+                      <Link to="computer-galaxy"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Computer Galaxy
+                      </Link>
+
+                      <Link to="computer-junction"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Computer Junction
+                      </Link>
+
+                      <Link to="computer-integrated"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Integrated Computer
+                      </Link>
+
+                      <Link to="computer-cbse"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Computer Buddy
-                      </a>
+                      </Link>
+
+                      <Link to="computer-cisce"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
+                      >
+                        Computer Companion
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -214,108 +279,96 @@ const Navbar = () => {
                 </button>
 
                 {showMedalistMenu && (
-                <div className="absolute left-0 top-full bg-white shadow-xl rounded-lg w-80 z-50">
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                <div className="absolute left-0 top-full bg-white shadow-xl rounded-lg w-80 z-50 py-2">
+                  <Link to="advanced-english-reader"
+                    className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                   >
                     Advanced English Reader Series
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                  <Link to="advanced-math"
+                    className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                   >
                     Advanced Maths Series
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                  <Link to="evs"
+                    className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                   >
                     Environmental Studies Series
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                  <Link to="advanced-science"
+                    className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                   >
                     Advanced Science Series
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                  <Link to="advanced-semester-book"
+                    className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                   >
                     Advanced Semester Book Series
-                  </a>
+                  </Link>
 
                   {/* English Grammar */}
-                  <div className="relative group/english">
-                    <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
+                  <div className="relative group/english ">
+                    <button className="w-full flex justify-between items-center px-4 py-1 hover:bg-blue-500 hover:text-white">
                       English Grammar Series
                       <ChevronRight size={16} />
                     </button>
 
-                    <div className="absolute left-full top-0 hidden group-hover/english:block bg-white shadow-xl rounded-lg w-72">
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                    <div className="absolute left-full top-0 hidden group-hover/english:block bg-white shadow-xl rounded-lg w-72 py-2">
+                      <Link to="revised-advanced-english-grammar"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Revised Advanced English Grammar
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="advanced-english-grammar"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Advanced English Grammar
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="progressive-english-grammar"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Progressive English Grammar
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="english-grammar-redefined"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         English Grammar Redefined
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
                   {/* Hindi Grammar */}
-                  <div className="relative group/hindi">
-                    <button className="w-full flex justify-between items-center px-4 py-2 hover:bg-blue-500 hover:text-white">
+                  <div className="relative group/hindi  ">
+                    <button className="w-full flex justify-between items-center px-4 py-1 hover:bg-blue-500 hover:text-white ">
                       Hindi Grammar Series
                       <ChevronRight size={16} />
                     </button>
 
-                    <div className="absolute left-full top-0 hidden group-hover/hindi:block bg-white shadow-xl rounded-lg w-72">
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                    <div className="absolute left-full top-0 hidden group-hover/hindi:block bg-white shadow-xl rounded-lg w-72 py-2">
+                      <Link to="revised-sampooran-hindi-vyakaran"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Revised Sampoorna Hindi Vyakaran
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="sampooran-hindi-vyakaran"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Sampoorna Hindi Vyakaran
-                      </a>
+                      </Link>
 
-                      <a
-                        href="#"
-                        className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                      <Link to="samast-hindi-vyakaran"
+                        className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                       >
                         Samast Hindi Vyakaran
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
