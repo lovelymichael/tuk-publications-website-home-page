@@ -50,7 +50,7 @@ useEffect(()=>{
                 ))}
             </div>
               <div>
-             <button className="mt-10 bg-black text-white px-6 py-2 rounded absolute bottom-6 right-10">
+             <button className="mt-10 bg-black text-white font-bold text-xl px-6 py-2 rounded absolute bottom-6 right-10">
           EXPLORE
         </button>    
             </div>          
