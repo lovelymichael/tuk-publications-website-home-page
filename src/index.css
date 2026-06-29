@@ -2,7 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-
+@font-face {
+  font-family: "k010";
+  src: url("../assets/fonts/k010.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .swiper-button-next,
 .swiper-button-prev {
   width: 40px !important;
@@ -114,4 +119,11 @@
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 15px solid #0065b5;
+}
+
+
+.hindi-font {
+  font-family: "k010", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
 }

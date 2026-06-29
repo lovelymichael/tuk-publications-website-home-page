@@ -1,65 +1,84 @@
 .flipedbook-banner {
-    width: 100%;
-    height: auto;
-    background-image: url(../images/flipbook-bannerbg.png);
-    background-repeat: repeat-x;
-    position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/flipbook-bannerbg.png);
+  background-repeat: repeat-x;
+  position: relative;
 }
 
-.book{
-    position: relative;
-    width:800px;
-    height:500px;
-    perspective: 2000px;
-    background-image: linear-gradient(90deg, hsl(0deg 0% 87% / 55%), hsl(0deg 0% 100% / 32%), hsl(0deg 4% 84% / 39%) 90%), url("../images/book-main-bg.png");
-    background-size: 100%;
-    box-shadow: 0 0 50px hsla(70, 0%, 0%, 0.4);
-    border-radius: 5px;
-    
+.book {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  perspective: 2000px;
+  background-image:
+    linear-gradient(
+      90deg,
+      hsl(0deg 0% 87% / 55%),
+      hsl(0deg 0% 100% / 32%),
+      hsl(0deg 4% 84% / 39%) 90%
+    ),
+    url("../images/book-main-bg.png");
+  background-size: 100%;
+  box-shadow: 0 0 50px hsla(70, 0%, 0%, 0.4);
+  border-radius: 5px;
 }
-.pages {
-    position: absolute;
-    width:50%;
-    height:100%;
-    right:0;
-    transform-origin:left center;
-    transition:transform 1s;
-    transform-style:preserve-3d;
-}
-
-.pages.flipped {
-    transform: rotateY(-180deg);
-}
-.side{
-    position:absolute;
-    width:100%;
-    height: 100%;
-    backface-visibility: hidden;
-    overflow: hidden;
+.page {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  transform-origin: left center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
-.front{
-background: white;
+.page.flipped {
+  transform: rotateY(-180deg);
+}
+.page {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  cursor: pointer;
 }
 
-.back{
-    background: white;
-    transform: rotate(180deg);
+.side-1,
+.side-2 {
+  backface-visibility: hidden;
+}
+.side-1,
+.side-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  backface-visibility: hidden;
+  overflow: hidden;
 }
 
-.side img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
+.side-1 {
+  z-index: 2;
+  box-shadow: inset 30px 0 30px rgba(143, 139, 139, 0.4);
 }
-.side.back {
+
+.side-2 {
   transform: rotateY(180deg);
 }
-.page:nth-child(even){border:1px solid red;}
 
-@media (max-width:900px){
-    .book{
-        width: 400px;
-        height: 250px;
-    }
+.side-1 img,
+.side-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flipped > .side-1 {
+  box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 900px) {
+  .book {
+    width: 400px;
+    height: 250px;
+  }
 }

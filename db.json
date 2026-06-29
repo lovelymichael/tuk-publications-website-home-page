@@ -1,0 +1,50 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "username": "student1",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "username": "student2",
+      "password": "abcd"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "username": "teacher1",
+      "password": "11111"
+    },
+    {
+      "id": "2",
+      "username": "teacher2",
+      "password": "22222"
+    }
+  ],
+  "contact": [
+    {
+      "id": "1",
+      "name": "Lovely",
+      "email": "lovely@gmail.com",
+      "phone": "9211420123",
+      "query": "Need Books"
+    },
+    {
+      "id": "2",
+      "name": "TUK",
+      "email": "tuk@gmai.com",
+      "phone": "1234209211",
+      "query": "Need Sample Book"
+    },
+    {
+      "name": "Lovely",
+      "email": "lovely@gmail.com",
+      "phone": "9211420123",
+      "query": "Need Books",
+      "id": "-X7MBZ42K_U"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -38,19 +38,19 @@ const books = [
     title: "Revised The Computer Hub",
     subtitle: "(Nursery, LKG & UKG)",
     image: revisedthecomputerhub1to8,
-    link: "/about-revised-the-computer-hub",
+    link: "/revised-the-computer-hub",
   },
   {
     title: "Revised Advanced English Grammar",
     subtitle: "(Nursery, LKG & UKG)",
     image: revisedadvancedenglishgrammar1to5,
-    link: "/about-revised-advanced-english-grammar",
+    link: "/revised-advanced-english-grammar",
   },
   {
     title: "Revised Sampoorna Hindi Vyakaran",
     subtitle: "(Classes 1 to 8)",
     image: sampoornahindivyakaran1to5,
-    link: "/about-revised-sampooran-hindi-vyakaran",
+    link: "/revised-sampooran-hindi-vyakaran",
   },
   {
     title: "Play and Learn Series & Practice Zone",

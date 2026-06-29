@@ -11,9 +11,10 @@ import Ukg from "../pages/tukpublications/kindergarten/playLearnSeries/UpperKint
 
 import PlayBookNursery from "../pages/tukpublications/kindergarten/playBookSeries/Nursery";
 import PlayBookLkg from "../pages/tukpublications/kindergarten/playBookSeries/LowerKindergaten";
+
 import PlayBookUkg from "../pages/tukpublications/kindergarten/playBookSeries/UpperKintergarten";
 
-import ResourceRepositoryKindergarten from "../pages/tukpublications/kindergarten/ResourceRepositoryKindergarten";
+import ResourceRepository from "../pages/tukpublications/kindergarten/ResourceRepository";
 
 import NewWondersGk from "../pages/tukpublications/gk/NewWondersGk";
 import RevisedUniversalGk from "../pages/tukpublications/gk/RevisedUniversalGk";
@@ -54,9 +55,6 @@ import SampooranaHindiVyakaran from "../pages/medalistpublications/hindiGrammer/
 import SamastHindiVyakaran from "../pages/medalistpublications/hindiGrammer/SamastHindiVyakaran";
 
 {/*About-page-slider-pages-Routing */}
-import AboutRevisedComputerHub from "../pages/aboutSlider/AboutRevisedComputerHub";
-import AboutRevisedAdvancedEnglishGrammar from "../pages/aboutSlider/AboutRevisedAdvancedEnglishGrammar";
-import AboutRevisedSampooranHindiVyakaran from "../pages/aboutSlider/AboutRevisedSampooranHindiVyakaran";
 import AboutMyplayBook from "../pages/aboutSlider/AboutMyplayBook";
 import AboutPracticeZone from "../pages/aboutSlider/Aboutpracticezone";
 import AboutAdvancedEnglishGrammar from "../pages/aboutSlider/AboutAdvancedEnglishGrammar";
@@ -68,6 +66,7 @@ import AboutAdvancedSemesterBook from "../pages/aboutSlider/AboutAdvancedSemeste
 import AboutSampooranHindiVyakaran from "../pages/aboutSlider/AboutSampooranHindiVyakaran";
 import AboutSamastHindiVyakaran from "../pages/aboutSlider/AboutSamastHindiVyakaran";
 import AboutWondersGk from "../pages/aboutSlider/AboutWondersGk";
+import AboutAdvancedGk from "../pages/aboutSlider/AboutAdvancedGk";
 import AboutUniversalGk from "../pages/aboutSlider/AboutUniversalGk";
 import AboutIntegratedGk from "../pages/aboutSlider/AboutIntegratedGk";
 import AboutGkRedefined from "../pages/aboutSlider/AboutGkRedefined";
@@ -104,24 +103,26 @@ function AppRoutes() {
       <Route path="/kindergarten-play-n-learn-books-ukg" element={<Ukg />} />
 
       <Route
-        path="/kindergarten-play-books-series-nursery"
+        path="/nursery"
         element={<PlayBookNursery />}
       />
       <Route
-        path="/kindergarten-play-books-series-lkg"
+        path="/lkindergarten"
         element={<PlayBookLkg />}
       />
+     
       <Route
-        path="/kindergarten-play-books-series-ukg"
+        path="/ukindergarten"
         element={<PlayBookUkg />}
       />
 
       <Route
         path="/resource-repository"
-        element={<ResourceRepositoryKindergarten />}
+        element={<ResourceRepository />}
       />
 
       <Route path="/new-wonders-gk" element={<NewWondersGk />} />
+      
       <Route path="/revised-universal-gk" element={<RevisedUniversalGk />} />
       <Route
         path="/revised-progressive-gk"
@@ -193,18 +194,7 @@ function AppRoutes() {
       <Route path="/samast-hindi-vyakaran" element={<SamastHindiVyakaran />} />
 
       {/*About-page-slider-pages-Routing */}
-      <Route
-        path="/about-revised-the-computer-hub"
-        element={<AboutRevisedComputerHub />}
-      />
-      <Route
-        path="/about-revised-advanced-english-grammar"
-        element={<AboutRevisedAdvancedEnglishGrammar />}
-      />
-      <Route
-        path="/about-revised-sampooran-hindi-vyakaran"
-        element={<AboutRevisedSampooranHindiVyakaran />}
-      />
+      
       <Route path="/about-myplay-book" element={<AboutMyplayBook />} />
       <Route path="/about-practice-zone" element={<AboutPracticeZone />} />
       <Route
@@ -234,6 +224,7 @@ function AppRoutes() {
         element={<AboutSamastHindiVyakaran />}
       />
       <Route path="/about-wonders-gk" element={<AboutWondersGk />} />
+      <Route path="/about-advanced-gk" element={<AboutAdvancedGk />} />
       <Route path="/about-universal-gk" element={<AboutUniversalGk />} />
       <Route path="/about-integrated-gk" element={<AboutIntegratedGk />} />
       <Route path="/about-gk-redefined" element={<AboutGkRedefined />} />

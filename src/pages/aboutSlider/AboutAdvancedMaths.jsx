@@ -1,10 +1,15 @@
 import React from "react";
+import Layout from "../../components/Layout";
+import AboutInnerHeroBanner from "../../components/AboutInnerHeroBanner";
+import AboutSeriesIntro from "../../components/AboutSeriesIntro";
+import { aboutSeriesIntroData } from "../../data/aboutSeriesIntroData";
 
 const AboutAdvancedMaths = () => {
   return (
-    <div>
-      <h1>About Advanced Maths</h1>
-    </div>
+    <Layout>
+            <AboutInnerHeroBanner title="Advanced Maths"/>
+            <AboutSeriesIntro {...aboutSeriesIntroData.advancedMaths}/>
+        </Layout>
   );
 };
 
