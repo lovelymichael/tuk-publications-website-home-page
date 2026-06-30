@@ -291,77 +291,77 @@ const Navbar = () => {
 
                       <div className="absolute left-full top-0 hidden group-hover/computer:block bg-white shadow-xl rounded-lg w-72 py-2">
                         <Link
-                          to="futuristic-computer"
+                          to="/futuristic-computer"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Futuristic Computer
                         </Link>
 
                         <Link
-                          to="artificial-intelligence"
+                          to="/artificial-intelligence"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Artificial Intelligence
                         </Link>
 
                         <Link
-                          to="advanced-computer"
+                          to="/advanced-computer"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Advanced Computer
                         </Link>
 
                         <Link
-                          to="progressive-computer"
+                          to="/progressive-computer"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Progressive Computer
                         </Link>
 
                         <Link
-                          to="revised-the-computer-hub"
+                          to="/revised-the-computer-hub"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Revised The Computer Hub
                         </Link>
 
                         <Link
-                          to="thecomputerhub"
+                          to="/thecomputerhub"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           The Computer Hub
                         </Link>
 
                         <Link
-                          to="computer-galaxy"
+                          to="/computer-galaxy"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Computer Galaxy
                         </Link>
 
                         <Link
-                          to="computer-junction"
+                          to="/computer-junction"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Computer Junction
                         </Link>
 
                         <Link
-                          to="computer-integrated"
+                          to="/computer-integrated"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Integrated Computer
                         </Link>
 
                         <Link
-                          to="computer-cbse"
+                          to="/computer-cbse"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Computer Buddy
                         </Link>
 
                         <Link
-                          to="computer-cisce"
+                          to="/computer-cisce"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Computer Companion
@@ -388,35 +388,35 @@ const Navbar = () => {
                 {showMedalistMenu && (
                   <div className="absolute left-0 top-full bg-white shadow-xl rounded-lg w-80 z-50 py-2">
                     <Link
-                      to="advanced-english-reader"
+                      to="/advanced-english-reader"
                       className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                     >
                       Advanced English Reader Series
                     </Link>
 
                     <Link
-                      to="advanced-math"
+                      to="/advanced-math"
                       className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                     >
                       Advanced Maths Series
                     </Link>
 
                     <Link
-                      to="evs"
+                      to="/evs"
                       className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                     >
                       Environmental Studies Series
                     </Link>
 
                     <Link
-                      to="advanced-science"
+                      to="/advanced-science"
                       className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                     >
                       Advanced Science Series
                     </Link>
 
                     <Link
-                      to="advanced-semester-book"
+                      to="/advanced-semester-book"
                       className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                     >
                       Advanced Semester Book Series
@@ -431,28 +431,28 @@ const Navbar = () => {
 
                       <div className="absolute left-full top-0 hidden group-hover/english:block bg-white shadow-xl rounded-lg w-72 py-2">
                         <Link
-                          to="revised-advanced-english-grammar"
+                          to="/revised-advanced-english-grammar"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Revised Advanced English Grammar
                         </Link>
 
                         <Link
-                          to="advanced-english-grammar"
+                          to="/advanced-english-grammar"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Advanced English Grammar
                         </Link>
 
                         <Link
-                          to="progressive-english-grammar"
+                          to="/progressive-english-grammar"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Progressive English Grammar
                         </Link>
 
                         <Link
-                          to="english-grammar-redefined"
+                          to="/english-grammar-redefined"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           English Grammar Redefined
@@ -469,21 +469,21 @@ const Navbar = () => {
 
                       <div className="absolute left-full top-0 hidden group-hover/hindi:block bg-white shadow-xl rounded-lg w-72 py-2">
                         <Link
-                          to="revised-sampooran-hindi-vyakaran"
+                          to="/revised-sampooran-hindi-vyakaran"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Revised Sampoorna Hindi Vyakaran
                         </Link>
 
                         <Link
-                          to="sampooran-hindi-vyakaran"
+                          to="/sampooran-hindi-vyakaran"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Sampoorna Hindi Vyakaran
                         </Link>
 
                         <Link
-                          to="samast-hindi-vyakaran"
+                          to="/samast-hindi-vyakaran"
                           className="block px-4 py-1 hover:bg-blue-500 hover:text-white"
                         >
                           Samast Hindi Vyakaran
